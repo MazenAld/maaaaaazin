@@ -1,17 +1,19 @@
-package Lab_2;
+package Lab_3;
 
 import java.util.Scanner;
 
 public class Q3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        double x,y;
+    int x;
         System.out.println("enter x :");
-        x= in.nextDouble();
-        System.out.println("enter y");
-        y= in.nextDouble();
-
-        System.out.println("the area is :" + (x*y));
-        System.out.println("the parameter is :" + (2*(x+y)));
+        x=in.nextInt();
+        if (x>0)
+            System.out.println("positive");
+        else if (x<0) {
+            System.out.println("negative");
+        }
+        else
+            System.out.println("the number is 0");
     }
 }

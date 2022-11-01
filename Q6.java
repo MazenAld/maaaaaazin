@@ -1,11 +1,21 @@
-package Lab_1;
+package Lab_3;
+
+import java.util.Scanner;
 
 public class Q6 {
     public static void main(String[] args) {
-        System.out.println((8*6)-5);
-        System.out.println((55+9)%9);
-        System.out.println(20+(-3*5/8));
-        System.out.println(5+(15/3*2)-(8%3));
-
+        Scanner in = new Scanner(System.in);
+        int x,y,z;
+        System.out.println("enter x :");
+        x=in.nextInt();
+        System.out.println("enter y :");
+        y=in.nextInt();
+        System.out.println("enter z :");
+        z =in.nextInt();
+        if (x == y || x==z)
+            System.out.println("all the same");
+        else if (x != y || x!= z) {
+            System.out.println("al not the same");
+        }
     }
 }
