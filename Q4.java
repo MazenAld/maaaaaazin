@@ -1,13 +1,18 @@
-package Lab_1;
+package Lab_2;
+
+import java.util.Scanner;
 
 public class Q4 {
     public static void main(String[] args) {
-        int balance=1000;
-
-
-        System.out.println("balance in first year is : " + (balance+=(balance/20)));
-        System.out.println("balance in second year is : " + (balance+=(balance/20)));
-        System.out.println("balance in third year is : " + (balance+=(balance/20)));
-
+        Scanner in = new Scanner(System.in);
+        int x,y,z,a;
+        System.out.println("enter x :");
+        x= in.nextInt();
+        System.out.println("enter y");
+        y= in.nextInt();
+        System.out.println("enter z");
+        z= in.nextInt();
+        a=x+y+z;
+        System.out.println("the average is :" + a);
     }
 }
